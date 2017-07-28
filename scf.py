@@ -96,6 +96,7 @@ for iteration in range(25):
     E_old = E_total
     print("Iter=%3d  E = % 16.12f  E_diff = % 8.4e  D_diff = % 8.4e" %
             (iteration, E_total, E_diff, grad_rms))
+    print("E_electric = % 16.12f" % (E_electric))
 
     # Break if e_conv and d_conv are met
     if (E_diff < e_conv) and (grad_rms < d_conv):
