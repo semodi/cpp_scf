@@ -112,7 +112,7 @@ psi4.set_options({"scf_type": "pk"})
 psi4_energy = psi4.energy("SCF/STO-3G", molecule=mol)
 print("Energy matches Psi4 %s" % np.allclose(psi4_energy, E_total))
 
-
+np.savetxt("H.data", H.ravel(), delimiter=" ")
 np.savetxt("D.data", D.ravel(), delimiter=" ")
 np.savetxt("F.data", F.ravel(), delimiter=" ")
 np.savetxt("C.data", C.ravel(), delimiter=" ")
