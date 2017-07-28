@@ -1,0 +1,52 @@
+
+Host: statmech7.chem.psu.edu
+
+Timers On : Fri Jul 28 10:54:46 2017
+Timers Off: Fri Jul 28 10:54:47 2017
+
+Wall Time:        0.44 seconds
+
+Total PK formation time     :      0.033u      0.000s      0.020w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.000w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.117u      0.000s      0.071w      1 calls
+SAD Guess                   :      0.117u      0.000s      0.069w      1 calls
+HF: Form G                  :      0.000u      0.000s      0.000w      8 calls
+JK: D                       :      0.000u      0.000s      0.000w      8 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w      8 calls
+JK: JK                      :      0.000u      0.000s      0.000w      8 calls
+PK computes JK              :      0.000u      0.000s      0.000w      8 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w      8 calls
+HF: Form F                  :      0.000u      0.000s      0.000w      8 calls
+HF: DIIS                    :      0.000u      0.000s      0.001w      8 calls
+DIISManager::add_entry      :      0.000u      0.000s      0.000w      7 calls
+DIISManager::extrapolate    :      0.000u      0.000s      0.000w      6 calls
+DIISManager::extrapolate: bMatrix setup:      0.000u      0.000s      0.000w      6 calls
+DIISManager::extrapolate: bMatrix pseudoinverse:      0.000u      0.000s      0.000w      6 calls
+DIISManager::extrapolate: form new data:      0.000u      0.000s      0.000w      6 calls
+HF: Form C                  :      0.000u      0.000s      0.000w      8 calls
+HF: Form D                  :      0.000u      0.000s      0.000w      8 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.033u      0.000s      0.020w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.000w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.117u      0.000s      0.071w      1 calls
+| SAD Guess                 :      0.117u      0.000s      0.069w      1 calls
+HF: Form G                  :      0.000u      0.000s      0.000w      8 calls
+| JK: D                     :      0.000u      0.000s      0.000w      8 calls
+| JK: USO2AO                :      0.000u      0.000s      0.000w      8 calls
+| JK: JK                    :      0.000u      0.000s      0.000w      8 calls
+| | PK computes JK          :      0.000u      0.000s      0.000w      8 calls
+| JK: AO2USO                :      0.000u      0.000s      0.000w      8 calls
+HF: Form F                  :      0.000u      0.000s      0.000w      8 calls
+HF: DIIS                    :      0.000u      0.000s      0.001w      8 calls
+| DIISManager::add_entry    :      0.000u      0.000s      0.000w      7 calls
+| DIISManager::extrapolate  :      0.000u      0.000s      0.000w      6 calls
+| | DIISManager::extrapolate: bMatrix setup:      0.000u      0.000s      0.000w      6 calls
+| | DIISManager::extrapolate: bMatrix pseudoinverse:      0.000u      0.000s      0.000w      6 calls
+| | DIISManager::extrapolate: form new data:      0.000u      0.000s      0.000w      6 calls
+HF: Form C                  :      0.000u      0.000s      0.000w      8 calls
+HF: Form D                  :      0.000u      0.000s      0.000w      8 calls
+
+***********************************************************
