@@ -13,6 +13,7 @@ vector<double> C (nel*nel);
 vector<double> H (nel*nel);
 vector<double> D (nel*nel);
 vector<double> E (nel*nel);
+vector<double> DS (nel*nel);
 
 int main()
 {
@@ -32,6 +33,12 @@ int main()
     // x.data() gives the pointer to vector x
     LAWrap::gemm('T', 'N', 7, 7, 5, 2.0, C.data(), 7, C.data(), 7, 0.0, D.data(), 7);
     
+    // Compute Tr(D*S) to check the density matrix (should be == nocc)
+    LAWrap::gemm('N', 'N', 7, 7, 7, 1.0, D.data(), 7, S.data(), 7, 0.0, DS.data(), 7);
+    double trace = 0;
+    for(int i=0; i< nel*nel; i+=8) trace += DS[i];
+    cout << "Trace of DS = " << trace << endl; 
+
     // Compute F + H
     LAWrap::axpy(nel*nel, 1.0, F.data(), 1, H.data(), 1);
 
